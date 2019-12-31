@@ -1,0 +1,16 @@
+/* miniprogram/pages/home/home.wxss */
+.add-image {
+  position: absolute;
+  width: 100rpx;
+  height: 100rpx;
+  right: 50rpx;
+  bottom: 50rpx;
+}
+.button-hover {
+  background-color: red;
+}
+/** 添加自定义button点击态样式类**/
+.other-button-hover {
+  background-color: blue;
+}
+button {margin: 10px;}
