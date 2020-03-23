@@ -1,0 +1,4 @@
+/* miniprogram/pages/user/user.wxss */
+.userInfo{
+  margin-top: 20px;
+}

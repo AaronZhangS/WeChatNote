@@ -14,3 +14,6 @@
   background-color: blue;
 }
 button {margin: 10px;}
+.authorize{
+  
+}

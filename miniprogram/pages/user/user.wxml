@@ -1,0 +1,7 @@
+<!--miniprogram/pages/user/user.wxml-->
+<view class="container">
+  <view class="userInfo container">
+    <open-data type="userAvatarUrl" default-avatar="../../images/user.png"></open-data>
+    <open-data type="userNickName" default-text="用户名"></open-data>
+  </view>
+</view>

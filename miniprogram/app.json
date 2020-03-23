@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/login/login",
     "pages/home/home",
     "pages/index/index",
+    "pages/user/user",
+    "pages/login/login",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
     "pages/databaseGuide/databaseGuide",
@@ -23,6 +24,24 @@
     "navigationBarTitleText": "微记事Note",
     "navigationBarTextStyle": "black"
   },
+    "tabBar": {
+      "color": "#b2b2b2",
+      "selectedColor": "#1296db",
+      "list": [
+        {
+          "pagePath": "pages/home/home",
+          "text": "首页",
+          "iconPath":"images/home.png",
+          "selectedIconPath":"images/home-active.png"
+        },
+        {
+          "pagePath": "pages/user/user",
+          "text": "我的",
+          "iconPath":"images/user.png",
+          "selectedIconPath":"images/user-active.png"
+        }
+      ]
+    },
   "sitemapLocation": "sitemap.json",
   "style": "v2"
 }
