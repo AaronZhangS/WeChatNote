@@ -1,7 +1,11 @@
 <!--miniprogram/pages/home/home.wxml-->
 <view class="container">
-  <open-data type="userAvatarUrl" default-avatar="../../images/user.png"></open-data>
+  <view wx:if="{{!canIUse}}">
+    <open-data type="userAvatarUrl" default-avatar="../../images/user.png"></open-data>
   <open-data type="userNickName" default-text="用户名"></open-data>
-  <button wx:if="{{canIUse}}" open-type="getUserInfo" type="primary" bindgetuserinfo="getUserInfo">微信授权登录</button>
-  <view wx:else>请升级微信版本</view>
+  <button open-type="getUserInfo" type="primary" bindgetuserinfo="getUserInfo">微信授权登录</button>
+  </view>
+  <view wx:else>
+    {{message[0].userid}}
+  </view>
 </view>
